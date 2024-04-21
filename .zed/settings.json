@@ -1,0 +1,33 @@
+{
+  "format_on_save": "on",
+  "language_overrides": {
+    "JavaScript": {
+      "format_on_save": {
+        "external": {
+          "command": "npx",
+          "arguments": [
+            "@biomejs/biome",
+            "check",
+            "--apply",
+            "--stdin-file-path",
+            "{buffer_path}"
+          ]
+        }
+      }
+    },
+    "TypeScript": {
+      "format_on_save": {
+        "external": {
+          "command": "npx",
+          "arguments": [
+            "@biomejs/biome",
+            "check",
+            "--apply",
+            "--stdin-file-path",
+            "{buffer_path}"
+          ]
+        }
+      }
+    }
+  }
+}
